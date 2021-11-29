@@ -1,0 +1,24 @@
+{
+  "name": "draft-assistant",
+  "version": "1.0.0",
+  "description": "draft assistant for league of legends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexTorices/draft-assistant.git"
+  },
+  "author": "Alejandro Torices & Fernando Melgar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexTorices/draft-assistant/issues"
+  },
+  "homepage": "https://github.com/AlexTorices/draft-assistant#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.12.0-alpha.1"
+  }
+}
