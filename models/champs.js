@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize")
 
-const Champ = (sequelize)=> {
-    sequelize.define('champ',{
+const Champs = (sequelize)=> {
+    sequelize.define('champs',{
         champName: {
             type: Sequelize.STRING(20),
             allowNull: false,
@@ -14,4 +14,4 @@ const Champ = (sequelize)=> {
     })
 }
 
-module.exports = Champ
+module.exports = Champs

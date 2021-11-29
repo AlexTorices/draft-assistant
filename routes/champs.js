@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const controller = require('../controller/champs')
+const champController = require('../controllers/champs')
 
-router.get("/", controller.all)
-router.post("/", controller.add)
-router.put("/", controller.update)
-router.delete("/", controller.delete)
+router.get("/getChamp", champController.getChamp)
+router.post("/addChamp", champController.addChamp)
+router.post("/updateChamp", champController.postUpdateChamp)
+router.delete("/deleteChamp", champController.deleteChamp)
 
 module.exports = router
