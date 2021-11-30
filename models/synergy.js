@@ -1,11 +1,24 @@
 const Sequelize = require("sequelize")
 
 const Synergy = (sequelize)=> {
-    sequelize.define('synergy',{
-        idSynergy:{
-            type: Sequelize.STRING,
+    sequelize.define('synergy', {
+        id_1: {
+            type: Sequelize.STRING(20),
             allowNull: false,
-            primaryKey: true
+            primaryKey: true,
+            references: {
+                model: 'champs',
+                key: 'champName'
+            }
+        },
+        id_2: {
+            type: Sequelize.STRING(20),
+            allowNull: false,
+            primaryKey: true,
+            references: {
+                model: 'champs',
+                key: 'champName'
+            }
         }
     })
 }

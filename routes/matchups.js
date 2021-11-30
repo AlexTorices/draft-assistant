@@ -1,10 +1,10 @@
 const express = require('express')
 const router = express.Router()
-const matchupController = require('../controller/matchup')
+const matchupController = require('../controllers/matchups')
 
-router.get("/getMatchup", matchupController.getMatchup)
 router.post("/addMatchup", matchupController.addMatchup)
-router.post("/updateMatchup", matchupController.postUpdateMatchup)
+router.get("/getStrongAgainst", matchupController.getStrongAgainst)
+router.get("/getWeakAgainst", matchupController.getWeakAgainst)
 router.delete("/deleteMatchup", matchupController.deleteMatchup)
 
 module.exports = router

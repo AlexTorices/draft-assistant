@@ -1,6 +1,8 @@
 const express = require("express")
 const path = require("path")
 const champRoutes = require('./routes/champs')
+const matchupRoutes = require('./routes/matchups')
+const synergyRoutes = require('./routes/synergy')
 const sequelize = require('./utils/database')
 const app = express();
 
@@ -11,6 +13,9 @@ app.engine('html', require('ejs').renderFile)
 app.set('view engine', 'ejs')
 
 app.use("/", champRoutes);
+app.use("/", matchupRoutes);
+app.use("/", synergyRoutes);
+
 
 sequelize.sync()
     .then(()=>{

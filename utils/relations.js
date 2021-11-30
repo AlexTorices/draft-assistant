@@ -9,7 +9,7 @@ function applyRelations(sequelize){
     Champs.belongsToMany(Champs, {as:'winner', through:Matchups})
     Champs.belongsToMany(Champs, {as: 'loser', through:Matchups})
 
-    Champs.belongsToMany(Champs, {as: '1', through:Synergy})  
+    Champs.belongsToMany(Champs, {as: '1', through:Synergy})
     Champs.belongsToMany(Champs, {as: '2', through:Synergy})   
 
 }
