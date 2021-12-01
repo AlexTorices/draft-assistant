@@ -20,7 +20,7 @@ app.use("/", synergyRoutes);
 sequelize.sync()
     .then(()=>{
         app.listen(8085,()=>{
-        console.log("Aplicación web en línea en el puerto 8082")
+        console.log("Aplicación web en línea en el puerto 8085")
         })
     })
     .catch(err=>console.log(err))
